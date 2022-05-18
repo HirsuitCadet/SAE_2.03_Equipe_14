@@ -5,8 +5,7 @@ RUN apt-get update && apt -y upgrade
 
 RUN apt-get install -y nfs-kernel-server \ 
 
-RUN mkdir home/nfs \
-	&& service nfs-kernel-server restart
+RUN service nfs-kernel-server restart
 
 #Exporter le contenu sur le port 80
 EXPOSE 80
