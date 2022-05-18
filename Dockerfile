@@ -1,8 +1,11 @@
 # Utiliser l'image debian officielle comme image parent
 FROM debian:latest
 
-RUN sudo apt-get install nfs-kernel-server \ 
-    && mkdir home/nfs \
+RUN apt-get update && apt -y upgrade
+
+RUN apt-get install -y nfs-kernel-server \ 
+
+RUN mkdir home/nfs \
 	&& service nfs-kernel-server restart
 
 #Exporter le contenu sur le port 80
