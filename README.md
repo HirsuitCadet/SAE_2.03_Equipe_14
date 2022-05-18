@@ -13,3 +13,4 @@ Ajoutez-y la ligne suivante (qui va servir à indiquer où va arriver le fichier
 <code>/home/nfs <adresse ip du récupérateur du fichier>/<nombre de bit de l'adresse IP></code> <br>
   <strong>NB</strong> : Si vous ne saisissez aucune adresse IP, tout le monde aura accès au fichier.<br>
 <br>
+Vous n'avez maintenant plus qu'à vous connecter à Docker
