@@ -1,7 +1,7 @@
 # docker-sae203
 
 Pour commencer, lancez le Dockerfile <br>
-    <code>docker run -it -p <port de la machine hôte>:21 proftpd-debian /bin/bash</code>
+    <code>docker run -it -p <port de la machine hôte>:21 proftpd-debian /bin/bash</code><br>
 <strong>NB :</strong> le port 21 est obligatoire pour les serveurs ftp.<br>
 <br>
 Vous allez maintenant créer un utilisateur pour se connnecter au serveur <br>
