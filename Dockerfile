@@ -1,15 +1,20 @@
-# Utiliser l'image debian officielle comme image parent
 FROM debian:latest
 
-RUN apt-get update && apt -y upgrade &&
-    apt-get install sysvinit-utils \
+WORKDIR ~
 
-RUN apt-get install -y nfs-kernel-server \ 
+#Installation des eventuels mise à jour
+RUN apt-get update
+RUN apt-get -y upgrade
 
-RUN service nfs-kernel-server restart
+#Installation des services nécessaires
+RUN apt -y install proftpd
 
-#Exporter le contenu sur le port 80
-EXPOSE 80
-
-#lancer le service nfs au démarrage du conteneur
-CMD ["home/nfs","DOFREGROUND"]
+#Copie du fichier de configuration
+#RUN echo " ServerName "" Equipe 14 Server"" \n\
+#         DisplayLogin "" Bienvenu sur Equipe 14 Server "" \n\
+#        UseIPv6 off   \n\
+#         Port 80  \n\
+#         RootLogin on \n\
+#         MaxClients 3  "  >> /etc/proftpd/conf.d/config.conf \n\
+#         <Limit Login>
+#               DenyGroup !ftp2100
