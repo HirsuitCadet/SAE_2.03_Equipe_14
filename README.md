@@ -1,5 +1,7 @@
 # docker-sae203
 
+Avant de lancer le projet, assurez-vous de lancer votre terminal dans le même dossier que le Dockerfile
+
 Pour commencer, lancez le Dockerfile <br>
     <code>docker run -it -p <port de la machine hôte>:21 proftpd-debian /bin/bash</code><br>
 <strong>NB :</strong> le port 21 est obligatoire pour les serveurs ftp.<br>
