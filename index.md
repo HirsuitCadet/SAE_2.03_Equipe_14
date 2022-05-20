@@ -1,8 +1,10 @@
-## Welcome to GitHub Pages
+## Introduction
 
-You can use the [editor on GitHub](https://github.com/HirsuitCadet/SAE_2.03_Equipe_14/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Notre equipe était composé de 3 membres: Brazeau Axel     B
+                                         Houard  Killian  B
+                                         Harel   Corentin B
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Nous avons pour but de réaliser une installation réseau à l'aide de docker. Nous avons le libre choix de choisir le sujet du projet mais nous avons quelques contraintes à respecter. Le projet doit être basé sur dockerfile et héberger par un dépôt github. Il doit partir d'une base debian, c’est-à-dire que la première ligne du Dockerfile devrait être FROM debian:latest. Et le projet doit être sur un seul serveur et non plusieurs.
 
 ### Markdown
 
