@@ -1,6 +1,6 @@
 # docker-sae203
 
-Avant de lancer le projet, assurez-vous de lancer votre terminal dans le même dossier que le Dockerfile
+Avant de lancer le projet, assurez-vous de lancer votre terminal dans le même dossier que le Dockerfile.
 
 Pour commencer, lancez le Dockerfile <br>
     <code>docker run -it -p <port de la machine hôte>:21 proftpd-debian /bin/bash</code><br>
@@ -15,7 +15,7 @@ Puis créer un groupe d'utilisateur nommé "ftp2100", nom donné au serveur dans
 Vous allez ajouter l'utilisateur au groupe "ftp2100" <br>
     <code>adduser <nom d'utilisateur> ftp2100</code>
 <br>
-L'utilisateur est maintenant ajouté au groupe, lui permettant d'accéder au serveur<br>
+L'utilisateur est maintenant ajouté au groupe, lui permettant d'accéder au serveur.<br>
 <br>
 Sous un système d'exploitation Linux, comme Debian par exemple, vous avez une option vous permettant de vous connecter sur un serveur via son IP ou identifiant. Cette option est généralement trouvable dans l'onglet "Emplacement".<br>
 Une fois la fenêtre de connexion affichée, vérifiez que l'option de connexion avec identifiant est activée. <br>
