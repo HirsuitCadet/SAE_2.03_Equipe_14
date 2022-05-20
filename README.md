@@ -1,16 +1,21 @@
 # docker-sae203
 
-Pour commencer, rendez-vous dans le répertoire racine <br>
-<code>cd ~</code> <br>
+Pour commencer, lancez le Dockerfile <br>
+    <code>docker run -it -p <port de la machine hôte>:21 proftpd-debian /bin/bash</code>
+<strong>NB :</strong> le port 21 est obligatoire pour les serveurs ftp.<br>
 <br>
-Créez un dossier nfs dans le répertoire home (celui dans lequel vous vous trouvez si vous avez suivi l'étape précédente) <br>
-```mkdir /home/nfs ``` <br>
+Vous allez maintenant créer un utilisateur pour se connnecter au serveur <br>
+    <code>adduser <nom d'utilisateur></code>
 <br>
-Vous allez maintenant éditer le fichier exports grâce à l'éditeur vi<br>
-<code>vi etc/exports</code> <br>
+Puis créer un groupe d'utilisateur nommé "ftp2100", nom donné au serveur dans le Dockerfile<br>
+    <code>addgroup ftp2100</code>
 <br>
-Ajoutez-y la ligne suivante (qui va servir à indiquer où va arriver le fichier à partager) <br>
-<code>/home/nfs <adresse ip du récupérateur du fichier>/<nombre de bit de l'adresse IP></code> <br>
-  <strong>NB</strong> : Si vous ne saisissez aucune adresse IP, tout le monde aura accès au fichier.<br>
+Vous allez ajouter l'utilisateur au groupe "ftp2100" <br>
+    <code>adduser <nom d'utilisateur> ftp2100</code>
 <br>
-Vous n'avez maintenant plus qu'à vous connecter à Docker
+L'utilisateur est maintenant ajouté au groupe, lui permettant d'accéder au serveur<br>
+<br>
+Sous un système d'exploitation Linux, comme Debian par exemple, vous avez un option vous permettant de vous connecter sur un serveur via son IP ou identifiant. Cette option est généralement trouvable dans l'onglet "Emplacement".<br>
+Une fois la fenêtre de connexion activée, vérifiez que l'option de connexion avec identifiant est activée. <br>
+Saisissez alors l'identifiant du serveur, <strong>di-docker</strong> dans notre cas, ou son IP, puis le port de connexion que vous avez renseigné lors du lancement du Dockerfile.<br>
+Ne vous étonnez pas, le temps de connexion est assez long.
