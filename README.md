@@ -17,7 +17,7 @@ Vous allez ajouter l'utilisateur au groupe "ftp2100" <br>
 <br>
 L'utilisateur est maintenant ajouté au groupe, lui permettant d'accéder au serveur.<br>
 <br>
-Sous un système d'exploitation Linux, comme Debian par exemple, vous avez une option vous permettant de vous connecter sur un serveur via son IP ou identifiant. Cette option est généralement trouvable dans l'onglet "Emplacement".<br>
+Sous un système d'exploitation Linux, comme Debian par exemple, vous avez une fonctionnalité vous permettant de vous connecter sur un serveur via son IP ou identifiant. Celle-ci est généralement trouvable dans l'onglet "Emplacement".<br>
 Une fois la fenêtre de connexion affichée, vérifiez que l'option de connexion avec identifiant est activée. <br>
 Saisissez alors l'identifiant du serveur, <strong>di-docker</strong> dans notre cas, ou son IP, puis le port de connexion que vous avez renseigné lors du lancement du Dockerfile.<br>
 Ne vous étonnez pas, le temps de connexion est assez long.
