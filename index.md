@@ -4,7 +4,7 @@ Notre equipe était composé de 3 membres: Brazeau Axel     B
                                          Houard  Killian  B
                                          Harel   Corentin B
 
-Nous avons pour but de réaliser une installation réseau à l'aide de docker. Nous avons le libre choix de choisir le sujet du projet mais nous avons quelques contraintes à respecter. Le projet doit être basé sur dockerfile et héberger par un dépôt github. Il doit partir d'une base debian, c’est-à-dire que la première ligne du Dockerfile devrait être FROM debian:latest. Et le projet doit être sur un seul serveur et non plusieurs.
+Nous avons pour but de réaliser une installation réseau à l'aide de docker. Nous avons le libre choix de choisir le sujet du projet mais nous avons quelques contraintes à respecter. Le projet doit être basé sur dockerfile et héberger par un dépôt github. Il doit être codé à partir du langage système de debian, c’est-à-dire que la première ligne du Dockerfile devrait être FROM debian:latest. Et le projet doit être sur un seul serveur et non plusieurs.
 
 ### Markdown
 
