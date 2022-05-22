@@ -13,5 +13,9 @@ Pour ce qui est du sujet nous avons choisi le partage de fichier. Nous avons ess
 
 [![Logo FTP](https://support.capconnect.com/wp-content/uploads/2020/09/file-transfer-protocol-min.png)]
 
+## Comment utiliser le serveur FTP
+
+Dans le fichier de configuration nous avons autorisé que les utilisateurs faisant parti du groupe ftp2100 à accéder au serveur. Il faudra donc crée un utilisateur lamba, et l'ajouter à un groupe ftp2100. <code> adduser xxx/ addgroup ftp2100" / adduser xxx ftp2100 </code>
+
 
 
