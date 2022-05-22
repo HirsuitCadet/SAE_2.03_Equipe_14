@@ -6,34 +6,12 @@ Notre equipe était composé de 3 membres: Brazeau Axel     B
 
 Nous avons pour but de réaliser une installation réseau à l'aide de docker. Nous avons le libre choix de choisir le sujet du projet mais nous avons quelques contraintes à respecter. Le projet doit être basé sur dockerfile et héberger par un dépôt github. Il doit être codé à partir du langage système de debian, c’est-à-dire que la première ligne du Dockerfile devrait être FROM debian:latest. Et le projet doit être sur un seul serveur et non plusieurs.
 
-### Markdown
+## Le Sujet 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Pour ce qui est du sujet nous avons choisi le partage de fichier. Nous avons essayer de passer par le lamp "NFS" (Network file system). Mais nous avons rencontré un problème de permission majeur: La non-accessibilité au fichier "etc" de notre session debian, dans lequel nous devions placé le fichier de confifuration du serveur. Nous sommes donc passé par "proftpd", un lamp qui permet de crée un serveur ftp. Nous avons crée le fichier "config.conf" directement dans le fichier du dockerfile. Pour copier-celui ci dans l'image qui héberge le serveur. En passant par cette méthode nous n'avons pas rencontrer de problème et le serveur a fini par fonctionné correctement. 
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+[img ](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsupport.capconnect.com%2Fknowledgebase%2Fquest-ce-que-ftp-sftp%2F&psig=AOvVaw20lJ9MIjbqHn1R2ix6_nZe&ust=1653313450166000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCODoj9ue8_cCFQAAAAAdAAAAABAD)(src)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/HirsuitCadet/SAE_2.03_Equipe_14/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
