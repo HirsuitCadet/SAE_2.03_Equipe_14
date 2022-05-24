@@ -45,5 +45,22 @@ Je précise d'abord que la connexion n'est possible que sur une machine debian.
 <code>EXPOSE 21</code>
 
 
+##Fichier de configuration du serveur
+
+ServerName "di-docker"
+DisplayLogin "Bienvenu sur le serveur de l'équipe 14"
+UseIPv6 off
+Port 21
+RootLogin on
+MaxClients 2
+UseReverseDNS off
+<Limit Login>
+  DenyGroup !ftp2100
+</Limit>
+<IfModule mod_ident.c>
+    IdentLookups off
+</IfModule>
+
+
 
 
