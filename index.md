@@ -23,6 +23,27 @@ Je précise d'abord que la connexion n'est possible que sur une machine debian.
 
 [Machine hôte] Dans le fichier de configuration nous avons autorisé que les utilisateurs faisant parti du groupe ftp2100 à accéder au serveur. Il faudra donc crée un utilisateur lamba, et l'ajouter au groupe ftp2100. <code> adduser xxx / adduser xxx ftp2100 </code>. [Machine distante] Ensuite sur la machine distante debian. Il vous faudrat vous connectez au serveur à l'aide de la fonctionalité "connexion à un serveur..". Puis sélectionner l'option "Serveur FTP avec identification". Puis y rentrer le nom du service (dans notre cas di-docker), le port, le nom de l'utilisateur et son mot de passe. Après cela vous êtes connecté au serveur et avez accès à tous les fichiers de la machine hôte vous pouvez d'ailleur, les ouvrir, les copier pour les transférer sur la machine distante. 
 
+##Explication de notre dockerfile
+
+<code>FROM debian:latest</code>
+
+<code> WORKDIR ~ </code>
+
+#Installation des eventuels mise à jour
+<code>RUN apt-get update</code>
+<code>RUN apt-get -y upgrade</code>
+
+#Installation des services nécessaires
+<code>RUN apt -y install proftpd</code>
+
+#Copie du fichier de configuration
+<code>COPY ./config.conf  /etc/proftpd/conf.d/</code>
+
+#Création de notre groupe d'utilisateur
+<code>RUN groupadd ftp2100</code>
+
+<code>EXPOSE 21</code>
+
 
 
 
