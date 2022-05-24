@@ -21,7 +21,8 @@ Pour ce qui est du sujet nous avons choisi le partage de fichier. Nous avons ess
 
 Je précise d'abord que la connexion n'est possible que sur une machine debian.
 
-[Machine hôte] Dans le fichier de configuration nous avons autorisé que les utilisateurs faisant parti du groupe ftp2100 à accéder au serveur. Il faudra donc crée un utilisateur lamba, et l'ajouter à un groupe ftp2100. <code> adduser xxx/ addgroup ftp2100" / adduser xxx ftp2100 </code>. [Machine distante] Ensuite sur la machine distante debian. Il vous faudrat vous connectez au serveur à l'aide de la fonctionalité "connexion à un serveur..". Puis sélectionner l'option "Serveur FTP avec identification". Puis y rentrer le nom du service (dans notre cas di-docker), le port, le nom de l'utilisateur et son mot de passe. Après cela vous êtes connecté au serveur et avez accès à tous les fichiers de la machine hôte vous pouvez d'ailleur, les ouvrir, les copier pour les transférer sur la machine distante. 
+[Machine hôte] Dans le fichier de configuration nous avons autorisé que les utilisateurs faisant parti du groupe ftp2100 à accéder au serveur. Il faudra donc crée un utilisateur lamba, et l'ajouter au groupe ftp2100. <code> adduser xxx / adduser xxx ftp2100 </code>. [Machine distante] Ensuite sur la machine distante debian. Il vous faudrat vous connectez au serveur à l'aide de la fonctionalité "connexion à un serveur..". Puis sélectionner l'option "Serveur FTP avec identification". Puis y rentrer le nom du service (dans notre cas di-docker), le port, le nom de l'utilisateur et son mot de passe. Après cela vous êtes connecté au serveur et avez accès à tous les fichiers de la machine hôte vous pouvez d'ailleur, les ouvrir, les copier pour les transférer sur la machine distante. 
+
 
 
 
